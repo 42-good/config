@@ -11,6 +11,7 @@ vim.cmd [[
   highlight NonText ctermbg=none
 ]]
 
-
 require("config.lazy")
+vim.api.nvim_set_keymap("n", " ", ":", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", ":", " ", { noremap = true, silent = true })
 
